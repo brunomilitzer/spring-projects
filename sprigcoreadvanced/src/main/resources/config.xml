@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="address" class="br.com.brunomilitzer.trainings.spring.springjdbc.sprigcoreadvanced.autowiring.Address" p:number="206" p:street="Rua Virgilino Ferreira de Souza" p:city="Florianópolis" />
+
+<!--    <bean name="employee" class="Employee" autowire="byType" />
+
+    <bean name="employee" class="Employee" autowire="byName" />-->
+
+    <bean name="employee" class="br.com.brunomilitzer.trainings.spring.springjdbc.sprigcoreadvanced.autowiring.Employee" autowire="constructor" />
+
+</beans>

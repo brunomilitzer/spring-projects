@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean name="customer" class="br.com.brunomilitzer.trainings.spring.springjdbc.springcore.map.Customer" p:id="20">
+        <property name="products">
+            <map>
+                <entry key="100" value="Galaxy S20" />
+                <entry key="200">
+                    <value>Galaxy S20+</value>
+                </entry>
+                <entry value="Galaxy S20 Ultra">
+                    <key>
+                        <value>300</value>
+                    </key>
+                </entry>
+                <entry>
+                    <key>
+                        <value>400</value>
+                    </key>
+                    <value>Galaxy S20 Ultra Plus</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>
